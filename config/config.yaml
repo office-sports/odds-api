@@ -1,0 +1,8 @@
+db:
+  address: localhost
+  port: 3666
+  username: bettor
+  password: bettor1234
+  schema: odds-game
+api:
+  port: 8001

@@ -1,8 +1,8 @@
 package data
 
 import (
-	"github.com/office-sports/ttapp-api/data/queries"
-	"github.com/office-sports/ttapp-api/models"
+	"github.com/office-sports/odds-api/data/queries"
+	"github.com/office-sports/odds-api/models"
 )
 
 // GetUserByLogin returns user model for requested login

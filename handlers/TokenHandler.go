@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/office-sports/odds-api/auth"
 	"github.com/office-sports/odds-api/data"
 	"github.com/office-sports/odds-api/models"
 	"log"
@@ -39,4 +40,12 @@ func GenerateToken(writer http.ResponseWriter, request *http.Request) {
 	t.Token = tokenString
 
 	json.NewEncoder(writer).Encode(t)
+}
+
+func CheckAuth() http.HandlerFunc {
+	hf := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("Welcome to the Megacity!"))
+	})
+
+	return hf
 }
