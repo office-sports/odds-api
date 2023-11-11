@@ -1,2 +1,3 @@
 .idea
 go_build_github_com_office_sports_odds_api
+config/config.yaml
